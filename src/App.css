@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+/* General styles */
+body {
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light text color for better readability */
+  font-family: 'Roboto', sans-serif; /* Modern font */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4 {
+  color: #00ccff; /* Sci-fi blue color for headings */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main layout styles */
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header styles */
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-bottom: 2px solid #00ccff; /* Sci-fi blue border */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Button styles */
+button {
+  background-color: #00ccff; /* Sci-fi blue background */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #0099cc; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Application Item styles */
+.ApplicationItem {
+  background-color: #2a2a2a; /* Slightly lighter dark background */
+  border: 1px solid #333333; /* Dark border */
+  border-radius: 10px; /* More rounded corners */
+  padding: 15px;
+  margin: 10px 0; /* Space between items */
+  transition: background-color 0.3s;
+}
+
+.ApplicationItem:hover {
+  background-color: #3a3a3a; /* Lighten background on hover */
+}
+
+/* Application Details styles */
+.ApplicationDetails {
+  background-color: #2a2a2a; /* Similar dark theme */
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.5); /* Sci-fi glow */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #1a1a1a; /* Same as header */
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid #00ccff; /* Sci-fi blue border */
+}
+
+nav button {
+  background-color: transparent; /* Transparent background */
+  color: #00ccff; /* Sci-fi blue text */
+  padding: 10px 20px;
+  border: none;
+}
+
+nav button:hover {
+  color: #ffffff; /* Change text color on hover */
+}
+
+/* Textarea styles */
+textarea {
+  background-color: #2a2a2a; /* Dark background */
+  color: #ffffff; /* White text */
+  border: 1px solid #00ccff; /* Sci-fi blue border */
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust text sizes for smaller screens */
+  h1 {
+      font-size: 1.8em;
   }
-  to {
-    transform: rotate(360deg);
+  h2 {
+      font-size: 1.5em;
+  }
+  button {
+      padding: 8px 16px;
+  }
+  textarea {
+      height: 120px; /* Adjust height for mobile */
   }
 }
