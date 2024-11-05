@@ -49,7 +49,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 iApply is a software tool to help assist students and all users to ease the process of developing and applying their job applications to companies to prevent the stress and anxiety that comes with via traditional methods.
 
-### [Figma Designs](https://www.figma.com/design/Z7NmdjnUZFdtIUCVzTpma7/High-Fidelity-Wireframes?node-id=2033-22&node-type=frame&t=NvZGFFFu24dIcyq5-0)
+### [Figma Designs](https://www.figma.com/design/Z7NmdjnUZFdtIUCVzTpma7/High-Fidelity-Wireframes?node-id=2033-22&t=NvZGFFFu24dIcyq5-1)
 
 ## Use:
 npm run deploy
